@@ -6,7 +6,7 @@ import MovieCard from "./MovieCard";
 
 const Contents = () => {
   return (
-    <section className="section relative pt-40 xl:pt-48">
+    <section className="section relative pt-40 transition-all duration-400 dark:bg-gray-900 xl:pt-48">
       {/* gradient */}
       <div className="absolute -top-[50px] -left-[160px] h-[400px] w-[400px] rounded-full bg-gradient-to-t from-purple-500 to-pink-500 blur-[80px] xl:-top-[100px] xl:-left-[200px] xl:h-[600px] xl:w-[600px] xl:blur-[100px]" />
 
@@ -19,7 +19,7 @@ const Contents = () => {
             <input
               type="text"
               placeholder="Search film, series, or tv show..."
-              className="flex h-[55px] w-full items-center bg-gray-200 px-6 font-title font-semibold text-gray-900 outline-none placeholder:font-sans placeholder:font-semibold placeholder:-tracking-[0.9px] placeholder:text-gray-600"
+              className="flex h-[55px] w-full items-center bg-gray-200 px-6 font-title font-semibold text-gray-900 outline-none transition-all duration-400 placeholder:font-sans placeholder:font-semibold placeholder:-tracking-[0.9px] placeholder:text-gray-600 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-400"
             />
             <button
               className="btn w-full sm:w-auto"

@@ -4,10 +4,10 @@
     @apply pt-24 pb-16;
   }
   .section-title {
-    @apply font-title text-[36px] font-semibold leading-title -tracking-[0.9px] text-gray-900;
+    @apply font-title text-[36px] font-semibold leading-title -tracking-[0.9px] text-gray-900 transition-all duration-400 dark:text-white;
   }
   .section-text {
-    @apply font-medium leading-text -tracking-[0.9px] text-gray-600;
+    @apply font-medium leading-text -tracking-[0.9px] text-gray-600 transition-all duration-400 dark:text-white;
   }
 
   /* button class */

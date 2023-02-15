@@ -26,7 +26,7 @@ const MovieCard = ({ movie }) => {
             return (
               <div
                 key={index}
-                className="rounded-full bg-gray-200 py-1 px-3 text-[12px] font-semibold text-gray-600"
+                className="rounded-full bg-gray-200 py-1 px-3 text-[12px] font-semibold text-gray-600 transition-all duration-400 dark:bg-gray-800 dark:text-gray-400"
               >
                 {tag.text}
               </div>
