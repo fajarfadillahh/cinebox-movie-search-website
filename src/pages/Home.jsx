@@ -11,7 +11,6 @@ const Home = () => {
       <div className="-z-50 mx-auto max-w-[1440px] overflow-hidden">
         <Header />
         <Contents />
-        <div className="h-[1000px]" />
         <Footer />
       </div>
     </>

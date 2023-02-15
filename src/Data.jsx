@@ -38,7 +38,7 @@ export const MovieData = [
     title: "Dunkrik",
     rating: 84,
     location: "USA",
-    date_release: "2016",
+    date_release: "2017",
     tags: [{ text: "Action" }, { text: "Drama" }, { text: "History" }],
   },
 ];

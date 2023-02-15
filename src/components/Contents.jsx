@@ -6,25 +6,28 @@ import MovieCard from "./MovieCard";
 
 const Contents = () => {
   return (
-    <section className="section relative pt-40">
-      <div className="container grid gap-24">
+    <section className="section relative pt-40 xl:pt-48">
+      <div className="container grid gap-20">
         <div className="text-center">
-          <h1 className="section-title pb-8">
+          <h1 className="section-title pb-8 md:text-[48px] lg:text-[56px]">
             Find your favorite movie<span className="text-blue-600">.</span>
           </h1>
-          <form className="grid items-center gap-4">
+          <form className="flex flex-col gap-4 sm:mx-auto sm:max-w-md sm:flex-row sm:items-center lg:max-w-lg">
             <input
               type="text"
               placeholder="Search film, series, or tv show..."
-              className="flex h-[55px] items-center bg-gray-200 px-6 font-title font-semibold text-gray-900 outline-none placeholder:font-sans placeholder:font-semibold placeholder:-tracking-[0.9px] placeholder:text-gray-600"
+              className="flex h-[55px] w-full items-center bg-gray-200 px-6 font-title font-semibold text-gray-900 outline-none placeholder:font-sans placeholder:font-semibold placeholder:-tracking-[0.9px] placeholder:text-gray-600"
             />
-            <button className="btn w-full" onClick={(e) => e.preventDefault()}>
+            <button
+              className="btn w-full sm:w-auto"
+              onClick={(e) => e.preventDefault()}
+            >
               Search
             </button>
           </form>
         </div>
 
-        <div className="grid justify-center gap-12">
+        <div className="grid justify-center gap-12 md:grid-cols-[repeat(2,max-content)] md:gap-x-6 lg:grid-cols-[repeat(3,max-content)] xl:grid-cols-4">
           {MovieData.map((movie, index) => {
             return <MovieCard key={index} movie={movie} />;
           })}
