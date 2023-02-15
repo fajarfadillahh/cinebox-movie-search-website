@@ -10,7 +10,10 @@ import {
 const Footer = () => {
   return (
     <footer className="relative pt-24 pb-8">
-      <div className="container grid justify-items-center gap-8">
+      {/* gradient */}
+      <div className="absolute -bottom-[150px] -right-[160px] h-[400px] w-[400px] rounded-full bg-gradient-to-t from-red-400 to-yellow-300 blur-[80px]" />
+
+      <div className="container relative grid justify-items-center gap-8">
         <div className="flex items-center gap-6 md:gap-8">
           {[
             [<RiYoutubeFill />, "/"],

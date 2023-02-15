@@ -7,7 +7,10 @@ import MovieCard from "./MovieCard";
 const Contents = () => {
   return (
     <section className="section relative pt-40 xl:pt-48">
-      <div className="container grid gap-20">
+      {/* gradient */}
+      <div className="absolute -top-[50px] -left-[160px] h-[400px] w-[400px] rounded-full bg-gradient-to-t from-purple-500 to-pink-500 blur-[80px] xl:-top-[100px] xl:-left-[200px] xl:h-[600px] xl:w-[600px] xl:blur-[100px]" />
+
+      <div className="container relative grid gap-20">
         <div className="text-center">
           <h1 className="section-title pb-8 md:text-[48px] lg:text-[56px]">
             Find your favorite movie<span className="text-blue-600">.</span>
