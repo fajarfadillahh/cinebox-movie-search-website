@@ -4,6 +4,7 @@ import React from "react";
 import Header from "../components/Header";
 import Contents from "../components/Contents";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Header />
         <Contents />
         <Footer />
+        <ScrollToTop />
       </div>
     </>
   );
