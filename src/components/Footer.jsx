@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="relative pt-24 pb-8">
       <div className="container grid justify-items-center gap-8">
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-6 md:gap-8">
           {[
             [<RiYoutubeFill />, "/"],
             [<RiTwitterFill />, "/"],
@@ -30,7 +30,7 @@ const Footer = () => {
           })}
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-4">
+        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-12">
           {[
             ["Conditions of Use", "/"],
             ["Privacy & Policy", "/"],
