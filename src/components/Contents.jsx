@@ -1,5 +1,9 @@
 import React from "react";
 
+// import movie data & movie card
+import { MovieData } from "../Data";
+import MovieCard from "./MovieCard";
+
 const Contents = () => {
   return (
     <section className="section relative pt-40">
@@ -20,7 +24,11 @@ const Contents = () => {
           </form>
         </div>
 
-        <div>movies</div>
+        <div className="grid justify-center gap-12">
+          {MovieData.map((movie, index) => {
+            return <MovieCard key={index} movie={movie} />;
+          })}
+        </div>
       </div>
     </section>
   );
