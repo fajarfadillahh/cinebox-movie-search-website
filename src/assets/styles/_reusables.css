@@ -7,7 +7,7 @@
     @apply font-title text-[36px] font-semibold leading-title -tracking-[0.9px] text-gray-900;
   }
   .section-text {
-    @apply leading-text -tracking-[0.9px] text-gray-600;
+    @apply font-medium leading-text -tracking-[0.9px] text-gray-600;
   }
 
   /* button class */
