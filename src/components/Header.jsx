@@ -17,10 +17,12 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 z-50 mx-auto w-full max-w-[1440px] transition ${
-        stickyHeader ? "bg-white" : "bg-transparent"
+        stickyHeader
+          ? "bg-white/80 backdrop-blur-md"
+          : "bg-transparent backdrop-blur-none"
       }`}
     >
-      <div className="container flex h-24 items-center justify-center border-b-2 border-gray-300">
+      <div className="container flex h-24 items-center justify-center">
         <Link to="/" className="section-title text-[24px]">
           Cinebox<span className="text-blue-600">.</span>
         </Link>

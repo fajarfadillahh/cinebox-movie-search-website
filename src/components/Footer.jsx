@@ -51,7 +51,9 @@ const Footer = () => {
           })}
         </div>
 
-        <p className="section-text">&copy; Cinebox. | by Fajar Fadillah A</p>
+        <p className="section-text">
+          &copy; 2023 Cinebox. | by Fajar Fadillah A
+        </p>
       </div>
     </footer>
   );
