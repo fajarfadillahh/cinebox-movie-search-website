@@ -4,34 +4,26 @@ import React from "react";
 import MovieIcon from "../assets/images/the-movie-db-icon.svg";
 
 const MovieCard = ({ movie }) => {
+  const { title, release_date, vote_average, poster_path } = movie;
+
   return (
     <div className="grid max-w-xs gap-6">
-      <img src={movie.movieImg} alt="movie poster img" />
+      <img
+        src={`${import.meta.env.VITE_BASEIMGURL}/${poster_path}`}
+        alt="movie poster img"
+        className="h-full w-full object-cover object-center"
+      />
 
       <div className="overflow-hidden">
-        <p className="section-text pb-3 font-semibold">
-          {movie.location}, {movie.date_release}
+        <p className="section-text pb-3 text-[14px] font-semibold">
+          Release: {release_date}
         </p>
-        <h3 className="section-title truncate pb-2 text-[28px]">
-          {movie.title}
-        </h3>
+        <h3 className="section-title truncate pb-2 text-[28px]">{title}</h3>
         <div className="flex items-center gap-2 pb-3">
           <img src={MovieIcon} alt="the movie db icon" className="w-8" />
           <p className="section-text font-semibold text-gray-900">
-            {movie.rating} / 100
+            {vote_average} / 10
           </p>
-        </div>
-        <div className="flex items-center gap-2">
-          {movie.tags.map((tag, index) => {
-            return (
-              <div
-                key={index}
-                className="rounded-full bg-gray-200 py-1 px-3 text-[12px] font-semibold text-gray-600 transition-all duration-400 dark:bg-gray-800 dark:text-gray-400"
-              >
-                {tag.text}
-              </div>
-            );
-          })}
         </div>
       </div>
     </div>
